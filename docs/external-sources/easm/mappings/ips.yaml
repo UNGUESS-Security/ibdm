@@ -3,7 +3,7 @@ itemFamily: ips
 type: ip
 syncable: true
 mappings:
-  identifier: "{{ .id | sha256sum }}"
+  identifier: "{{ .ip | sha256sum }}"
   metadata:
     title: "{{ get \"ip\" . .id | quote }}"
   spec:
